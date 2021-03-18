@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 1</title>
+</head>
+
+<!--Buatlah data array yang berisi minimal 5 pekerjaan dibidang IT (Ex. Front end developer). 
+Tampilkan panjang data Array
+Tampilkan seluruh item pada array
+Gunakan Console.log
+Tampilkan data tersebut pada Halaman HTML menggunakan list tag
+-->
+
+<body>
+    <script>
+        let role = ['Front End Developer', 
+                    'Back End Developer', 
+                    'Full Stack Developer', 
+                    'UI/UX Designer',
+                    'Quality Assurance'
+                    ];
+
+        //menampilkan panjang data array pada console.log
+        console.log(role.length)
+
+        //menampilkan seluruh item pada array
+        console.log(role);
+
+        //menampilkan data tersebut pada halaman html menggunakan list tag
+        document.write('5 Pekerjaan di Bidang IT:')
+        document.write('<ol>')
+        role.forEach(role => {
+            document.write(`<li> ${role} </li>`)
+        })
+    </script>
+    
+</body>
+
+</html>

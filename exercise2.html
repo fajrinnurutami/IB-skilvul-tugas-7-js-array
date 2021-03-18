@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 2</title>
+</head>
+
+<!--
+Butlah sebuah data array yang berisi nama pada tim teman-teman.
+Bagi tim menjadi 2 tim dan terdiri dari 1 orang leader
+Console.log data array tersebut dengan memisahkan setiap data menggunakan  koma (,)
+Tampilkan list data tersebut ke halaman HTML
+hidden:
+Cek built-in method Array
+Bisa pakai slice() atau splice()
+-->
+
+<body>
+    <script>
+        //membuat array 
+        let fullTeam = ['Fajrin', 
+                        'Nur',
+                        'Utami',
+                        'Adi',
+                        'Budi',
+                        'Didi',
+                    ]
+
+        //membagi tim menjadi 2 tim
+        let teamA = fullTeam.slice(0,3)
+        let teamB = fullTeam.slice(3,6)
+
+        //menentukan leader
+        
+
+        //Console.log data array tersebut dengan memisahkan setiap data menggunakan  koma (,)
+        console.log(teamA.join(','))
+        console.log(teamB.join(','))
+        
+     
+
+        //Tampilkan list data tersebut ke halaman HTML
+        document.write('Team A : ')
+        document.write('<ol>')
+            teamA.forEach(teamA => {
+                document.write(`<li> ${teamA}`)
+            })
+
+        document.write('</ol>')
+
+        document.write('Team B : ')
+        document.write('<ol>')
+            teamB.forEach(teamB => {
+                document.write(`<li> ${teamB}`)
+            })
+        document.write('</ol>')
+
+    </script>
+    
+</body>
+
+</html>
